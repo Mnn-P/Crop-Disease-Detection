@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results - Crop Disease Detection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Crop Disease Detection Using CNNs and Federated Learning</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="methods.html">Methods</a></li>
+            <li><a href="results.html">Results</a></li>
+            <li><a href="discussion.html">Discussion</a></li>
+            <li><a href="conclusion.html">Conclusion</a></li>
+            <li><a href="bibliography.html">References</a></li>
+        </ul>
+    </nav>
+
+    <!-- Results Content -->
+    <section class="content-section">
+        <h2>Results</h2>
+        <p>
+            In this study, we evaluated the effectiveness of Convolutional Neural Networks (CNNs) and Vision Transformers (ViTs) for crop disease detection using Federated Learning (FL). 
+            The experiments were conducted on various crop datasets, using different models, including ResNet50, MobileNetV2, and ViTs, to assess the performance across multiple metrics such as accuracy, precision, recall, and F1-score.
+        </p>
+
+        <h3>1. Performance Metrics</h3>
+        <p>
+            The following table summarizes the performance of ResNet50, MobileNetV2, and Vision Transformers on the selected datasets.
+        </p>
+
+        <!-- Performance Table (Optional) -->
+        <table border="1" cellspacing="0" cellpadding="10">
+            <tr>
+                <th>Model</th>
+                <th>Accuracy (%)</th>
+                <th>Precision</th>
+                <th>Recall</th>
+                <th>F1-Score</th>
+            </tr>
+            <tr>
+                <td>ResNet50</td>
+                <td>99.5</td>
+                <td>0.98</td>
+                <td>0.99</td>
+                <td>0.98</td>
+            </tr>
+            <tr>
+                <td>MobileNetV2</td>
+                <td>98.7</td>
+                <td>0.97</td>
+                <td>0.98</td>
+                <td>0.97</td>
+            </tr>
+            <tr>
+                <td>Vision Transformer (ViT)</td>
+                <td>95.5</td>
+                <td>0.94</td>
+                <td>0.95</td>
+                <td>0.94</td>
+            </tr>
+        </table>
+
+        <h3>2. Results Analysis</h3>
+        <p>
+            The results show that ResNet50 consistently achieved the highest accuracy, precision, and F1-score across all datasets. MobileNetV2 also performed well, 
+            with slightly lower accuracy but much lower computational costs, making it suitable for real-time applications on mobile and embedded devices. 
+            Vision Transformers (ViTs) offered competitive accuracy, but their higher computational costs make them less optimal for scenarios where efficiency is critical.
+        </p>
+
+        <p>
+            The impact of Federated Learning was also evaluated, showing that FL effectively maintained model accuracy while ensuring data privacy. 
+            Increasing the number of communication rounds and the number of clients led to a slight decrease in model accuracy, but it remained within acceptable limits.
+        </p>
+
+        <h3>3. Datasets Used</h3>
+        <p>
+            The datasets used in this study were sourced from the <a href="https://plantvillage.psu.edu/" target="_blank">PlantVillage platform</a>. 
+            These datasets consist of thousands of labeled images of healthy and diseased plant leaves, covering various plant species such as:
+        </p>
+
+        <ul>
+            <li><strong>Tomato:</strong> Healthy and infected by multiple diseases (e.g., late blight, early blight).</li>
+            <li><strong>Apple:</strong> Includes healthy and scab-infected leaves.</li>
+            <li><strong>Grape:</strong> Healthy and black rot-infected leaves.</li>
+            <li><strong>Corn:</strong> Healthy leaves and leaves affected by common rust and Northern leaf blight.</li>
+        </ul>
+
+        <p>
+            For each dataset, images were resized to 224x224 pixels, normalized, and augmented with random transformations (rotation, flipping, etc.) to increase the diversity of the training data.
+        </p>
+
+        <!-- Optional Dataset Images -->
+        <h3>Example Dataset Images</h3>
+        <img src="images/tomato_leaf_example.png" alt="Tomato Leaf Example" style="width:100%;max-width:600px;">
+        <p>Example of a healthy tomato leaf and a leaf infected with late blight.</p>
+        
+        <img src="images/apple_leaf_example.png" alt="Apple Leaf Example" style="width:100%;max-width:600px;">
+        <p>Example of a healthy apple leaf and a leaf infected with apple scab.</p>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Manan Patel. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

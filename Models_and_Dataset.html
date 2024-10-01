@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Models and Data Set - Crop Disease Detection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Models and Data Set for Crop Disease Detection</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="abstract.html">Abstract</a></li>
+            <li><a href="conclusion.html">Conclusion</a></li>
+            <li><a href="algorithms.html">Algorithms</a></li>
+            <li><a href="bibliography.html">Bibliography</a></li>
+            <li><a href="models-dataset.html">Models and Data Set</a></li>
+        </ul>
+    </nav>
+
+    <!-- Content Section -->
+    <section class="content-section">
+        <h2>Models Used for Crop Disease Detection</h2>
+        <p>
+            For the purpose of crop disease detection, several machine learning models were used, including:
+        </p>
+        <ul>
+            <li><strong>Convolutional Neural Networks (CNNs)</strong>: These are widely used for image classification and disease detection tasks, as they excel at recognizing patterns in images.</li>
+            <li><strong>ResNet-50</strong>: A deep convolutional neural network known for its efficiency in handling large datasets and complex patterns.</li>
+            <li><strong>MobileNet-V2</strong>: A lightweight convolutional neural network optimized for mobile and embedded devices, ensuring faster inference times with a smaller footprint.</li>
+            <li><strong>Vision Transformers (ViT)</strong>: Modern models based on attention mechanisms that handle image classification tasks with enhanced accuracy by analyzing the global context of the image.</li>
+        </ul>
+
+        <h3>Why These Models?</h3>
+        <p>
+            The choice of these models ensures a balance between accuracy, computational efficiency, and scalability. Convolutional Neural Networks like ResNet-50 are known for their robustness in handling large image datasets, while Vision Transformers represent cutting-edge research in image classification, offering improved accuracy on complex tasks. MobileNet-V2 is chosen for its lightweight nature, making it suitable for real-time, low-power applications such as on-field crop disease detection.
+        </p>
+
+        <h2>Data Set Used</h2>
+        <p>
+            The dataset used for this project is sourced from the open-source <strong>PlantVillage platform</strong>, which consists of over 50,000 images of healthy and infected plant leaves. 
+        </p>
+        <h3>Data Set Description</h3>
+        <p>
+            The dataset contains images of leaves from different plants, with various diseases affecting each category. We used data from four specific crops: <strong>grapes, apples, corn,</strong> and <strong>tomatoes</strong>, which were classified into healthy and infected categories. The dataset is further divided into training and testing sets to evaluate the performance of the models.
+        </p>
+        <h4>Data Set Summary</h4>
+        <ul>
+            <li><strong>Grapes:</strong> Healthy and infected grape leaves.</li>
+            <li><strong>Apples:</strong> Healthy and infected apple leaves.</li>
+            <li><strong>Corn:</strong> Healthy and infected corn leaves.</li>
+            <li><strong>Tomatoes:</strong> Healthy and infected tomato leaves across 10 different categories.</li>
+        </ul>
+        <p>
+            The images are preprocessed by resizing them to a uniform dimension (224x224 pixels) and normalized to ensure consistency. Data augmentation techniques such as rotation and flipping were applied to enhance the robustness of the models.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Manan Patel. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
