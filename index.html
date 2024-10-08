@@ -33,6 +33,45 @@
             The study investigates the application of federated learning (FL) in crop disease detection, using Convolutional Neural Networks (CNNs) and Vision Transformers (ViTs). 
             We utilize the PlantVillage dataset to train models that detect crop diseases in various plant leaves, preserving user data privacy and security.
         </p>
+         <section class="content-section">
+        <h2>Abstract</h2>
+        <p>
+            Crop disease detection and management is critical to improving productivity, reducing costs, and promoting environmentally friendly crop treatment methods. 
+            Precision agriculture, which leverages modern technologies, aims to optimize crop yields while minimizing the use of harmful pesticides and other treatments.
+        </p>
+
+        <h3>Challenges with Centralized Data Processing</h3>
+        <p>
+            Traditional crop disease detection methods rely on centralized data collection and model training. This approach presents challenges, including data privacy concerns, high data transfer costs, and limited availability of training data.
+        </p>
+
+        <h3>Role of Federated Learning</h3>
+        <p>
+            Federated learning (FL) offers a promising decentralized approach for crop disease classification. 
+            By allowing multiple devices to collaboratively train a model without sharing raw data, FL enhances data privacy and ensures compliance with regulations such as GDPR. 
+            This is particularly advantageous for sensitive agricultural data and crop management practices.
+        </p>
+
+        <h3>Model Development and Evaluation</h3>
+        <p>
+            The study evaluated convolutional neural networks (CNNs) and attention-based models like Vision Transformers (ViT) using federated learning. 
+            Training data was sourced from the open-access "PlantVillage" platform, which includes images of healthy and infected plant leaves.
+        </p>
+
+        <h3>Key Findings</h3>
+        <ul>
+            <li>ResNet50 emerged as the optimal choice among CNN models, balancing accuracy with computational cost.</li>
+            <li>ViT models showed high accuracy but required more computational resources, making them less suitable for efficiency-critical scenarios.</li>
+            <li>The performance of models in a federated learning setup is influenced by the number of clients, communication rounds, local iterations, and data quality.</li>
+            <li>Federated learning maintained model accuracy while preserving data privacy, making it suitable for real-world agricultural applications.</li>
+        </ul>
+
+        <h3>Conclusion and Future Directions</h3>
+        <p>
+            Federated learning has significant potential for improving crop disease classification while ensuring data security. 
+            Future research can explore ways to optimize communication costs and extend federated learning to other agricultural challenges.
+        </p>
+   
     </section>
 
     <!-- Footer -->
