@@ -27,16 +27,51 @@
     </nav>
 
     <!-- Algorithms Content -->
-    <section class="content-section">
-        <h2>Algorithms Used in Crop Disease Detection</h2>
-        <p>We used several advanced algorithms in this research for image classification and disease detection. Below are the details:</p>
+  <section class="content-section">
+    <h2>Algorithms</h2>
 
-        <h3>Algorithm 1: CNN Training Pipeline</h3>
-        <img src="images/algorithm_1.png" alt="Algorithm 1" style="width:100%;max-width:600px;">
+    <h3>Federated Learning Overview</h3>
+    <p>
+        Federated Learning (FL) is a decentralized learning approach where multiple clients (devices) collaboratively train a model while keeping their data localized. The server aggregates updates from each client to form a global model without accessing raw data.
+    </p>
+
+    <h3>Federated Averaging (FedAvg)</h3>
+    <p>
+        FedAvg is the most common algorithm in FL, aggregating model updates by computing a weighted average of each client’s model parameters. This method ensures that no client’s data leaves its device, preserving privacy while maintaining model accuracy.
+    </p>
+
+    <h3>Client Update Process</h3>
+    <p>
+        Clients perform local training on their datasets using a fixed number of epochs and then share model updates with the central server. The server aggregates these updates to improve the global model iteratively. The process repeats over several communication rounds.
+    </p>
+
+    <h3>Data Partitioning and Training</h3>
+    <p>
+        The dataset is partitioned among clients to ensure diverse data representation during training. Each client trains on their local subset of data, which includes both healthy and diseased plant images, ensuring that the global model learns robust features across different conditions.
+    </p>
+
+    <h3>Secure Multi-party Computation (SMC)</h3>
+    <p>
+        SMC-based methods are used in federated learning to ensure that even during model aggregation, individual data points remain secure. This adds an extra layer of privacy by ensuring that computations do not reveal any specific client’s contributions.
+    </p>
+
+    <h2>Algorithms Used in Crop Disease Detection</h2>
+    <p>We used several advanced algorithms in this research for image classification and disease detection. Below are the details:</p>
+
+    <h3>Algorithm 1: CNN Training Pipeline</h3>
+    <img src="images/algorithm_1.png" alt="Algorithm 1" style="width:100%;max-width:600px;">
+    <p>This algorithm involves training a Convolutional Neural Network (CNN) model with data from various crops, classifying them as healthy or diseased based on image inputs.</p>
         
-        <h3>Algorithm 2: Federated Learning Setup</h3>
-        <img src="images/algorithm_2.png" alt="Algorithm 2" style="width:100%;max-width:600px;">
-    </section>
+    <h3>Algorithm 2: Federated Learning Setup</h3>
+    <img src="images/algorithm_2.png" alt="Algorithm 2" style="width:100%;max-width:600px;">
+    <p>The Federated Learning setup allows multiple devices to collaboratively train models while maintaining data privacy, ensuring that raw data stays on each local device while sharing only model updates.</p>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2024 Manan Patel. All rights reserved.</p>
+</footer>
+
 
     <!-- Footer -->
     <footer>
